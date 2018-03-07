@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for item in object_list %}
+<div class="panel panel-default">
+<div class="panel-body">
+	<h3>Question {{ forloop.counter }}</h3>
+	<p>{{ item.question }}</p>
+	<hr>
+	<h4>Constraints</h4>
+	<p>{{ item.constraints }}</p>
+	<hr>
+	<h4>Input Format</h4>
+	<p>{{ item.input_Format }}</p>
+	<hr>
+	<h4>Output Format</h4>
+	<p>{{ item.output_Format }}</p>
+	<hr>
+	<h4>Example</h4>
+	<p>{{ item.example }}</p>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}

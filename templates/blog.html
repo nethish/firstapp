@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for item in object_list %}
+<div class="panel panel-default">
+<div class="panel-body">
+	<h3>{{ item.title }}</h3>
+	<p>Posted on {{ item.time_stamp }}</p>
+	<p>{{ item.article }}</p>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}
