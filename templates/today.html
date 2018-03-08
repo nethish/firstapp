@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+
+{% block title %} {{ block.super }} | Today {% endblock %}
 {% block content %}
 
 {% for item in object_list %}
